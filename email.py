@@ -31,9 +31,9 @@ if st.button("Send Email"):
                 server.starttls()
                 server.login(sender, password)
                 server.send_message(message)
-                st.success("✅ Email sent successfully!")
+                st.success("Email sent successfully!")
         except Exception as e:
-            st.error(f"❌ Failed to send email: {str(e)}")
+            st.error(f"Failed to send email: {str(e)}")
 
 
 
